@@ -3,213 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudo AV2 - Terapia Manual | UNINASSAU Cacoal</title>
+    <title>Estudo AV2 - Cinesiologia e Biomecânica - UNINASSAU</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
+            scroll-behavior: smooth;
         }
-        details > summary {
-            list-style: none;
+        .gradient-bg {
+            background: linear-gradient(135deg, #003366 0%, #00509e 100%);
         }
-        details > summary::-webkit-details-marker {
-            display: none;
+        .card-hover {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
 <body class="text-gray-800 antialiased">
 
-    <!-- Header UNINASSAU -->
-    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+    <!-- Navbar / Header -->
+    <header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div>
-                <h1 class="text-2xl font-bold tracking-tight">Terapia Manual - AV2</h1>
-                <p class="text-blue-200 text-sm mt-1">UNINASSAU Cacoal | Guia de Revisão Biomecânica e Artrocinemática</p>
+                <h1 class="text-2xl font-bold tracking-tight">Cinesiologia e Biomecânica - AV2</h1>
+                <p class="text-sm text-blue-200">UNINASSAU Cacoal | Guia de Estudos</p>
+                <p class="text-xs text-blue-300 mt-1">Prof. Heriton Marcelo</p>
             </div>
-            <div class="mt-4 md:mt-0 flex items-center space-x-2">
-                <i data-lucide="book-open" class="text-blue-300"></i>
-                <span class="font-semibold text-blue-100">Prof. / Monitoria</span>
+            <div>
+                <a href="https://drive.google.com/drive/folders/1m2fbXUzWK_kw1gLdcg4qYaQ0SLQU-KsW?usp=sharing" target="_blank" class="hidden md:inline-flex items-center bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded-lg transition duration-300 shadow-md">
+                    <i class="fas fa-folder-open mr-2"></i> Material Completo (Drive)
+                </a>
             </div>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
-        
-        <!-- Botão Drive -->
-        <section class="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-600 flex flex-col md:flex-row items-center justify-between">
-            <div class="mb-4 md:mb-0">
-                <h2 class="text-xl font-bold text-gray-800 mb-1">Material Teórico Completo</h2>
-                <p class="text-gray-600 text-sm">Acesse a pasta do Drive contendo artigos, slides e referências bibliográficas para a AV2.</p>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1m2fbXUzWK_kw1gLdcg4qYaQ0SLQU-KsW?usp=sharing" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 flex items-center space-x-2">
-                <i data-lucide="external-link" class="w-5 h-5"></i>
-                <span>Acessar Google Drive</span>
-            </a>
-        </section>
+    <!-- Mobile Drive Button -->
+    <div class="md:hidden bg-white p-4 shadow-sm border-b">
+        <a href="https://drive.google.com/drive/folders/1m2fbXUzWK_kw1gLdcg4qYaQ0SLQU-KsW?usp=sharing" target="_blank" class="w-full flex justify-center items-center bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold px-4 py-3 rounded-lg transition duration-300 shadow-md">
+            <i class="fas fa-folder-open mr-2"></i> Acessar Material Completo
+        </a>
+    </div>
 
-        <!-- Módulo 1: Cotovelo -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="bg-slate-800 px-6 py-4 border-b">
-                <h2 class="text-xl font-bold text-white flex items-center">
-                    <i data-lucide="activity" class="w-5 h-5 mr-2"></i> I. Complexo Articular do Cotovelo
-                </h2>
-            </div>
-            <div class="p-6 space-y-6">
-                <div>
-                    <h3 class="font-bold text-lg text-blue-900 border-b-2 border-blue-100 pb-2 mb-3">1. Osteocinemática</h3>
-                    <p class="text-gray-700 mb-2">O cotovelo atua no plano sagital (eixo látero-lateral). Valores de normalidade clínica:</p>
-                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                        <li><strong>Flexão:</strong> 145º (Variação clínica: 120º a 160º, dependendo da massa muscular/adiposa). Mínimo funcional para AVDs: 100º a 120º.</li>
-                        <li><strong>Extensão:</strong> 0º (Pode atingir até 10º de hiperextensão, especialmente em mulheres e frouxidão ligamentar).</li>
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Left Column: Biomechanics and Anatomy -->
+            <div class="lg:col-span-2 space-y-8">
+                
+                <!-- Section 1: Osteokinematics -->
+                <article class="bg-white rounded-xl shadow-sm p-6 lg:p-8 card-hover border border-gray-100">
+                    <div class="flex items-center mb-4 pb-4 border-b border-gray-100">
+                        <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4">
+                            <i class="fas fa-bone text-xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-800">I. Osteocinemática e Biomecânica</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">O cotovelo atua como intermediário da cadeia cinética do membro superior, permitindo o posicionamento funcional da mão no espaço.</p>
+                    
+                    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-2">1. Amplitude de Movimento (ADM)</h3>
+                    <div class="overflow-x-auto mb-4">
+                        <table class="min-w-full divide-y divide-gray-200 text-sm text-left">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-4 py-2 font-semibold text-gray-700">Movimento</th>
+                                    <th class="px-4 py-2 font-semibold text-gray-700">Amplitude Normal</th>
+                                    <th class="px-4 py-2 font-semibold text-gray-700">Variação Clínica</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-4 py-2 font-medium">Flexão</td>
+                                    <td class="px-4 py-2">145º</td>
+                                    <td class="px-4 py-2 text-gray-600">120º a 160º (depende da massa muscular/biotipo)</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 font-medium">Extensão</td>
+                                    <td class="px-4 py-2">0º</td>
+                                    <td class="px-4 py-2 text-gray-600">Até 10º (hiperextensão em mulheres/frouxidão)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bg-orange-50 border-l-4 border-orange-400 p-4 mt-4 rounded-r">
+                        <p class="text-sm text-orange-800"><strong>Implicação Clínica:</strong> A manutenção de pelo menos 100º a 120º de flexão é essencial para a maioria das AVDs (Atividades de Vida Diária), como pentear o cabelo ou alimentar-se.</p>
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-2">2. Eficiência Muscular e Torque</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>A força gerada varia conforme o ângulo (braço de momento) e comprimento muscular.</li>
+                        <li><strong>Picos de Eficiência:</strong> Flexores variam entre 83 kg e 37 kg; Extensores entre 66 kg e 51 kg.</li>
+                        <li>O pico de eficiência dos flexores ocorre em torno de <strong>90º de flexão</strong> (maior braço de momento mecânico).</li>
                     </ul>
+                </article>
+
+                <!-- Section 2: Arthrokinematics (ADDED CONTENT) -->
+                <article class="bg-white rounded-xl shadow-sm p-6 lg:p-8 card-hover border border-blue-200 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                        CONTEÚDO ADICIONAL (NEUMANN, 2011)
+                    </div>
+                    <div class="flex items-center mb-4 pb-4 border-b border-gray-100 mt-2">
+                        <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4">
+                            <i class="fas fa-hands text-xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-800">II. Artrocinemática e Cinesiologia</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">Compreender o comportamento intra-articular é obrigatório para a aplicação de mobilizações articulares.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h4 class="font-bold text-gray-800">Articulação Umeroulnar (Flexo-Extensão)</h4>
+                            <p class="text-sm text-gray-600 mt-1">A incisura troclear da ulna (côncava) articula-se com a tróclea do úmero (convexa). Pela regra côncavo-convexo, <strong>o rolamento e o deslizamento ocorrem no mesmo sentido</strong>. Para ganhar flexão em terapia manual, mobiliza-se a ulna em sentido anterior/ventral.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h4 class="font-bold text-gray-800">Articulação Umerorradial</h4>
+                            <p class="text-sm text-gray-600 mt-1">A fóvea da cabeça do rádio (côncava) articula-se com o capítulo do úmero (convexo). Rolamento e deslizamento também ocorrem no <strong>mesmo sentido</strong>.</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h4 class="font-bold text-gray-800">Articulação Radioulnar Proximal (Prono-Supinação)</h4>
+                            <p class="text-sm text-gray-600 mt-1">A cabeça do rádio (convexa) roda sobre a incisura radial da ulna (côncava). O <strong>rolamento e o deslizamento ocorrem em sentidos opostos</strong>. Na pronação, o rádio rola volarmente e desliza dorsalmente.</p>
+                        </div>
+
+                        <div class="bg-blue-50 border border-blue-100 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-800"><i class="fas fa-shield-alt mr-2"></i>Estabilidade Ligamentar</h4>
+                            <ul class="list-disc pl-5 text-sm text-gray-700 mt-2 space-y-1">
+                                <li><strong>Lig. Colateral Medial (Ulnar):</strong> Principal restritor do estresse em Valgo. Sua banda anterior é a mais forte.</li>
+                                <li><strong>Lig. Colateral Lateral (Radial):</strong> Resiste ao estresse em Varo.</li>
+                                <li><strong>Lig. Anular:</strong> Abraça a cabeça do rádio, essencial para estabilidade na prono-supinação.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3: Myology -->
+                <article class="bg-white rounded-xl shadow-sm p-6 lg:p-8 card-hover border border-gray-100">
+                    <div class="flex items-center mb-4 pb-4 border-b border-gray-100">
+                        <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4">
+                            <i class="fas fa-dumbbell text-xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-800">III. Miologia Funcional do Cotovelo</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6 text-sm">Músculos que atuam especificamente na articulação do cotovelo.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Flexors -->
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-200 inline-block">Flexores</h3>
+                            
+                            <div class="mb-4">
+                                <h4 class="font-bold text-blue-700">Bíceps Braquial</h4>
+                                <p class="text-xs text-gray-500 mb-1">Biarticular, potente supinador.</p>
+                                <ul class="text-sm text-gray-600">
+                                    <li><strong>Origem:</strong> P. Longa (Tubérculo supraglenoidal); P. Curta (Processo coracoide).</li>
+                                    <li><strong>Inserção:</strong> Tuberosidade do rádio e aponeurose bicipital.</li>
+                                    <li><strong>Ação:</strong> Flexão e potente supinação.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-bold text-blue-700">Braquial Anterior</h4>
+                                <p class="text-xs text-gray-500 mb-1">O "burro de carga" da flexão.</p>
+                                <ul class="text-sm text-gray-600">
+                                    <li><strong>Origem:</strong> Metade distal da face anterior do úmero. <em>(Dado corrigido)</em></li>
+                                    <li><strong>Inserção:</strong> Tuberosidade da ulna / proc. coronoide. <em>(Dado corrigido)</em></li>
+                                    <li><strong>Ação:</strong> Principal flexor, atua em qualquer posição do antebraço.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-bold text-blue-700">Braquiorradial</h4>
+                                <ul class="text-sm text-gray-600">
+                                    <li><strong>Origem:</strong> Crista supracondilar lateral do úmero.</li>
+                                    <li><strong>Inserção:</strong> Processo estiloide do rádio.</li>
+                                    <li><strong>Ação:</strong> Flexão; leva o antebraço à posição neutra.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Extensors -->
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-200 inline-block">Extensores</h3>
+                            
+                            <div class="mb-4">
+                                <h4 class="font-bold text-blue-700">Tríceps Braquial</h4>
+                                <p class="text-xs text-gray-500 mb-1">Principal extensor, possui 3 cabeças.</p>
+                                <ul class="text-sm text-gray-600">
+                                    <li><strong>Origem P. Longa:</strong> Tubérculo infraglenoidal da escápula (biarticular).</li>
+                                    <li><strong>Origem Lateral/Medial:</strong> Face posterior do úmero.</li>
+                                    <li><strong>Inserção:</strong> Olécrano da ulna.</li>
+                                    <li><strong>Ação:</strong> Extensão do cotovelo.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="font-bold text-blue-700">Ancôneo</h4>
+                                <ul class="text-sm text-gray-600">
+                                    <li>Músculo de pequena dimensão que auxilia na extensão e estabilização articular, tensionando a cápsula para não ser "beliscada" no olécrano.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Right Column: Study Questions & CTA -->
+            <div class="space-y-6">
+                <!-- CTA Drive Button -->
+                <div class="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-xl shadow-lg p-6 text-center text-blue-900 border border-yellow-300">
+                    <i class="fas fa-folder-open text-4xl mb-3 opacity-80"></i>
+                    <h3 class="text-xl font-bold mb-2">Material Completo</h3>
+                    <p class="text-sm font-medium mb-4">Acesse os slides, PDFs e aulas completas da AV2 no Drive.</p>
+                    <a href="https://drive.google.com/drive/folders/1m2fbXUzWK_kw1gLdcg4qYaQ0SLQU-KsW?usp=sharing" target="_blank" class="block w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded transition duration-300 shadow">
+                        Acessar Google Drive <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Quiz / Fixation -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                    <div class="bg-blue-900 text-white p-4">
+                        <h3 class="text-lg font-bold"><i class="fas fa-question-circle mr-2"></i>Questões de Fixação</h3>
+                    </div>
+                    <div class="p-0 divide-y divide-gray-100 max-h-[800px] overflow-y-auto">
+                        
+                        <!-- Q1 -->
+                        <details class="p-4 group cursor-pointer">
+                            <summary class="font-semibold text-gray-800 group-hover:text-blue-600 outline-none">
+                                1. Qual é a ADM normal para a flexão do cotovelo e sua variação clínica?
+                            </summary>
+                            <div class="mt-3 text-sm text-gray-600 bg-gray-50 p-3 rounded border-l-4 border-green-500">
+                                <strong>Resposta:</strong> A flexão normal é de 145º, variando clinicamente de 120º a 160º. A extensão varia de 0º a 10º.<br>
+                                <span class="text-xs text-gray-500 mt-1 block"><em>Comentário:</em> Diferenciar limite patológico de variação anatômica (ex: massa muscular).</span>
+                            </div>
+                        </details>
+
+                        <!-- Q2 -->
+                        <details class="p-4 group cursor-pointer">
+                            <summary class="font-semibold text-gray-800 group-hover:text-blue-600 outline-none">
+                                2. Função peculiar do Braquiorradial?
+                            </summary>
+                            <div class="mt-3 text-sm text-gray-600 bg-gray-50 p-3 rounded border-l-4 border-green-500">
+                                <strong>Resposta:</strong> Realiza pronação e supinação até o ponto neutro.<br>
+                                <span class="text-xs text-gray-500 mt-1 block"><em>Comentário:</em> Age como um equilibrador dinâmico do antebraço.</span>
+                            </div>
+                        </details>
+
+                        <!-- Q3 -->
+                        <details class="p-4 group cursor-pointer">
+                            <summary class="font-semibold text-gray-800 group-hover:text-blue-600 outline-none">
+                                3. Qual cabeça do Tríceps tem relação com a escápula?
+                            </summary>
+                            <div class="mt-3 text-sm text-gray-600 bg-gray-50 p-3 rounded border-l-4 border-green-500">
+                                <strong>Resposta:</strong> A Porção Longa (Tubérculo infraglenoidal).<br>
+                                <span class="text-xs text-gray-500 mt-1 block"><em>Comentário:</em> Por ser biarticular, também atua na extensão/adução do ombro.</span>
+                            </div>
+                        </details>
+
+                        <!-- Q4 -->
+                        <details class="p-4 group cursor-pointer">
+                            <summary class="font-semibold text-gray-800 group-hover:text-blue-600 outline-none">
+                                4. Ação secundária do Bíceps Braquial?
+                            </summary>
+                            <div class="mt-3 text-sm text-gray-600 bg-gray-50 p-3 rounded border-l-4 border-green-500">
+                                <strong>Resposta:</strong> Supinação do antebraço.<br>
+                                <span class="text-xs text-gray-500 mt-1 block"><em>Comentário:</em> Principal supinador com o cotovelo fletido (ação de "rosquear").</span>
+                            </div>
+                        </details>
+
+                        <!-- Q5 (New based on added content) -->
+                        <details class="p-4 group cursor-pointer">
+                            <summary class="font-semibold text-blue-800 group-hover:text-blue-600 outline-none">
+                                5. [Novo] Qual o sentido do deslizamento articular na flexão da umeroulnar?
+                            </summary>
+                            <div class="mt-3 text-sm text-gray-600 bg-blue-50 p-3 rounded border-l-4 border-blue-500">
+                                <strong>Resposta:</strong> Sentido Anterior/Ventral.<br>
+                                <span class="text-xs text-gray-500 mt-1 block"><em>Comentário:</em> Superfície côncava (ulna) movendo sobre convexa (úmero). Deslizamento e rolamento no mesmo sentido. Fundamental para mobilização.</span>
+                            </div>
+                        </details>
+
+                    </div>
                 </div>
                 
-                <div class="bg-blue-50 p-4 rounded-lg">
-                    <h3 class="font-bold text-blue-900 flex items-center mb-2">
-                        <i data-lucide="move" class="w-4 h-4 mr-2"></i> Artrocinemática Aplicada (Terapia Manual)
-                    </h3>
-                    <p class="text-sm text-gray-800 mb-2">Fundamental para tração e deslizamento na prática clínica:</p>
-                    <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1">
-                        <li><strong>Articulação Umeroulnar:</strong> Incisura troclear (Côncava) sobre a Tróclea do Úmero (Convexa). <em>Regra Côncava:</em> Rolamento e Deslizamento no <strong>mesmo sentido</strong>. (Ex: Flexão = rolamento e deslizamento anteriores).</li>
-                        <li><strong>Articulação Radioulnar Proximal:</strong> Cabeça do rádio (Convexa) sobre a incisura radial da ulna (Côncava). <em>Regra Convexa:</em> Rolamento e Deslizamento em <strong>sentidos opostos</strong> na pronação/supinação.</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-lg text-blue-900 border-b-2 border-blue-100 pb-2 mb-3">2. Eficiência Muscular e Torque</h3>
-                    <p class="text-gray-700">A força gerada varia conforme o ângulo (braço de momento). O pico de eficiência dos flexores ocorre em torno de <strong>90º de flexão</strong>. Variação de força: Flexores (83kg a 37kg); Extensores (66kg a 51kg).</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div class="border rounded p-4">
-                        <h4 class="font-bold text-gray-800">Principais Flexores</h4>
-                        <ul class="text-sm text-gray-600 mt-2 space-y-2">
-                            <li><strong>Bíceps Braquial:</strong> Biarticular (Tub. supraglenoidal e Proc. Coracoide até Tub. do Rádio). Auxilia na supinação potente.</li>
-                            <li><strong>Braquial:</strong> O "burro de carga". Monoarticular, atua em qualquer posição do antebraço.</li>
-                            <li><strong>Braquiorradial:</strong> Estabilizador; atua na pronação/supinação até o ponto neutro. (Inervação: Nervo Radial).</li>
-                        </ul>
-                    </div>
-                    <div class="border rounded p-4">
-                        <h4 class="font-bold text-gray-800">Principais Extensores</h4>
-                        <ul class="text-sm text-gray-600 mt-2 space-y-2">
-                            <li><strong>Tríceps Braquial:</strong> Três cabeças (Longa - infraglenoidal biarticular; Medial e Lateral - úmero). Inserção unificada no olécrano.</li>
-                            <li><strong>Ancôneo:</strong> Auxilia na extensão e tenciona a cápsula articular para evitar pinçamento.</li>
-                        </ul>
-                    </div>
+                <div class="text-xs text-center text-gray-400 mt-4">
+                    Clique nas perguntas para revelar as respostas.
                 </div>
             </div>
         </div>
-
-        <!-- Módulo 2 e 3: Quadril e Joelho (Conteúdo Adicionado) -->
-        <div class="grid md:grid-cols-2 gap-6">
-            <!-- Quadril -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                <div class="bg-indigo-800 px-6 py-4 border-b">
-                    <h2 class="text-lg font-bold text-white flex items-center">
-                        <i data-lucide="person-standing" class="w-5 h-5 mr-2"></i> II. Quadril (Coxofemoral)
-                    </h2>
-                </div>
-                <div class="p-6">
-                    <p class="text-xs text-indigo-600 font-bold mb-3 uppercase tracking-wider">Conteúdo Expandido</p>
-                    <ul class="text-sm text-gray-700 space-y-3">
-                        <li><strong>Osteocinemática (Normalidade):</strong> Flexão (120º), Extensão (20º), Abdução (40-45º), Adução (25-30º), Rotação Int/Ext (45º).</li>
-                        <li><strong>Artrocinemática (Regra Convexa):</strong> Cabeça do fêmur (Convexa) no Acetábulo (Côncavo). <br><em>Aplicação Manual:</em> Para ganhar Flexão de quadril, o fêmur rola anteriormente e <strong>desliza posteriormente e inferiormente</strong>. A mobilização em deslizamento posterior aumenta a flexão.</li>
-                        <li><strong>Estabilidade:</strong> Articulação esferóidea altamente congruente, estabilizada pelo ligamento iliofemoral, pubofemoral e isquiofemoral.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Joelho -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                <div class="bg-teal-800 px-6 py-4 border-b">
-                    <h2 class="text-lg font-bold text-white flex items-center">
-                        <i data-lucide="bone" class="w-5 h-5 mr-2"></i> III. Joelho (Tibiofemoral)
-                    </h2>
-                </div>
-                <div class="p-6">
-                    <p class="text-xs text-teal-600 font-bold mb-3 uppercase tracking-wider">Conteúdo Expandido</p>
-                    <ul class="text-sm text-gray-700 space-y-3">
-                        <li><strong>Osteocinemática:</strong> Flexão (135º-145º), Extensão (0º a 5º). Possui rotação axial (apenas quando flexionado).</li>
-                        <li><strong>Artrocinemática (Cadeia Cinética Aberta):</strong> Tíbia (Côncava) sobre Fêmur (Convexo). <em>Regra Côncava:</em> Rolamento e deslizamento no <strong>mesmo sentido</strong>. Para ganhar extensão de joelho na maca, mobiliza-se a tíbia anteriormente.</li>
-                        <li><strong>Mecanismo de Parafuso (Screw-home):</strong> Nos últimos 20º de extensão, ocorre uma rotação externa obrigatória da tíbia para "travar" a articulação.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Questões de Fixação Interativas -->
-        <section class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
-            <div class="bg-slate-100 px-6 py-4 border-b border-gray-200">
-                <h2 class="text-xl font-bold text-gray-800 flex items-center">
-                    <i data-lucide="help-circle" class="w-5 h-5 mr-2 text-blue-600"></i> Questões de Fixação - Autoavaliação
-                </h2>
-                <p class="text-sm text-gray-500 mt-1">Clique na pergunta para revelar o gabarito comentado (Método Ativo de Estudo).</p>
-            </div>
-            
-            <div class="divide-y divide-gray-200">
-                <!-- Pergunta 1 -->
-                <details class="group p-6 cursor-pointer hover:bg-gray-50 transition-colors">
-                    <summary class="flex justify-between items-center font-semibold text-gray-800">
-                        1. Qual a variação clínica da flexão do cotovelo e por que sua limitação funcional abaixo de 100º afeta as AVDs?
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="mt-4 pl-4 border-l-4 border-green-500 text-sm text-gray-700 bg-green-50 p-4 rounded-r-lg">
-                        <p><strong>Resposta:</strong> A flexão normal é 145º, variando de 120º a 160º. Uma ADM entre 100º e 120º é o arco funcional básico.</p>
-                        <p class="mt-2 text-gray-600"><em>Comentário Clínico:</em> Abaixo de 100º, o paciente perde a capacidade de realizar atividades simples como levar a mão à boca para se alimentar, escovar os dentes ou pentear o cabelo.</p>
-                    </div>
-                </details>
-
-                <!-- Pergunta 2 -->
-                <details class="group p-6 cursor-pointer hover:bg-gray-50 transition-colors">
-                    <summary class="flex justify-between items-center font-semibold text-gray-800">
-                        2. Na Terapia Manual, se você precisa aumentar a flexão do joelho de um paciente em decúbito ventral (Cadeia Aberta), qual a direção do deslizamento da tíbia?
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="mt-4 pl-4 border-l-4 border-green-500 text-sm text-gray-700 bg-green-50 p-4 rounded-r-lg">
-                        <p><strong>Resposta:</strong> Deslizamento Posterior.</p>
-                        <p class="mt-2 text-gray-600"><em>Comentário Clínico:</em> Pela regra do côncavo-convexo, a tíbia possui platôs côncavos. Em cadeia aberta, a superfície côncava (tíbia) se move sobre a convexa (fêmur) rolando e deslizando para a <strong>mesma direção</strong>. Como a flexão é um movimento para trás, o deslizamento artrocinemático deve ser posterior.</p>
-                    </div>
-                </details>
-
-                <!-- Pergunta 3 -->
-                <details class="group p-6 cursor-pointer hover:bg-gray-50 transition-colors">
-                    <summary class="flex justify-between items-center font-semibold text-gray-800">
-                        3. Descreva o papel peculiar do músculo Braquiorradial na pronação e supinação.
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="mt-4 pl-4 border-l-4 border-green-500 text-sm text-gray-700 bg-green-50 p-4 rounded-r-lg">
-                        <p><strong>Resposta:</strong> Ele atua trazendo o antebraço para a posição neutra, seja a partir de uma pronação extrema ou supinação extrema.</p>
-                        <p class="mt-2 text-gray-600"><em>Comentário Clínico:</em> Ele é considerado o músculo "equilibrador" do antebraço. Além disso, é inervado pelo nervo Radial, sendo testado clinicamente no reflexo estilorradial (C5-C6).</p>
-                    </div>
-                </details>
-
-                <!-- Pergunta 4 -->
-                <details class="group p-6 cursor-pointer hover:bg-gray-50 transition-colors">
-                    <summary class="flex justify-between items-center font-semibold text-gray-800">
-                        4. Sobre a cabeça longa do Tríceps Braquial, qual sua importância na avaliação postural e biomecânica do ombro?
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="mt-4 pl-4 border-l-4 border-green-500 text-sm text-gray-700 bg-green-50 p-4 rounded-r-lg">
-                        <p><strong>Resposta:</strong> A porção longa se origina no tubérculo infraglenoidal da escápula, tornando-a biarticular.</p>
-                        <p class="mt-2 text-gray-600"><em>Comentário Clínico:</em> Por cruzar o ombro inferiormente, ela atua não só estendendo o cotovelo, mas auxiliando na extensão e adução do ombro. Encurtamentos dessa estrutura podem limitar a flexão máxima do ombro se o cotovelo estiver simultaneamente flexionado.</p>
-                    </div>
-                </details>
-            </div>
-        </section>
-
     </main>
 
-    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
-        <p>Página gerada para suporte ao estudo | Disciplina: Terapia Manual - AV2</p>
-        <p class="mt-1">UNINASSAU Cacoal - Baseado em Kapandji & Neumann.</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-lg font-bold mb-2">Fisioterapia - UNINASSAU Cacoal</h2>
+            <p class="text-gray-400 text-sm mb-4">Disciplina: Cinesiologia e Biomecânica | Material de Apoio AV2</p>
+            <p class="text-gray-500 text-xs">Prof. Heriton Marcelo. Desenvolvido para fins didáticos. Referências: Kapandji, I.A. (Fisiologia Articular); Neumann, D.A. (Cinesiologia do Aparelho Musculoesquelético).</p>
+        </div>
     </footer>
 
-    <script>
-        // Inicializa os ícones do Lucide
-        lucide.createIcons();
-    </script>
 </body>
 </html>
